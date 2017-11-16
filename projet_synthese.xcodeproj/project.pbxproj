@@ -7,9 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		EC2BA3281FB9E9BE0083491F /* icon_40.png in Resources */ = {isa = PBXBuildFile; fileRef = EC2BA3271FB9E9BB0083491F /* icon_40.png */; };
-		EC2BA32A1FB9EB640083491F /* icon_76.png in Resources */ = {isa = PBXBuildFile; fileRef = EC2BA3291FB9EB610083491F /* icon_76.png */; };
-		EC2BA32C1FB9FEFB0083491F /* palette.tiff in Resources */ = {isa = PBXBuildFile; fileRef = EC2BA32B1FB9FEF60083491F /* palette.tiff */; };
+		0EDA9E9B1FBE150800F42D7A /* intro.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0EDA9E9A1FBE150800F42D7A /* intro.jpg */; };
 		EC3E1E8F1FB9DC0A002E4900 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC3E1E8E1FB9DC0A002E4900 /* AppDelegate.swift */; };
 		EC3E1E911FB9DC0A002E4900 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC3E1E901FB9DC0A002E4900 /* ViewController.swift */; };
 		EC3E1E941FB9DC0A002E4900 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC3E1E921FB9DC0A002E4900 /* Main.storyboard */; };
@@ -18,9 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		EC2BA3271FB9E9BB0083491F /* icon_40.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_40.png; sourceTree = "<group>"; };
-		EC2BA3291FB9EB610083491F /* icon_76.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_76.png; sourceTree = "<group>"; };
-		EC2BA32B1FB9FEF60083491F /* palette.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = palette.tiff; sourceTree = "<group>"; };
+		0EDA9E9A1FBE150800F42D7A /* intro.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = intro.jpg; sourceTree = "<group>"; };
 		EC3E1E8B1FB9DC0A002E4900 /* projet_synthese.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = projet_synthese.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC3E1E8E1FB9DC0A002E4900 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EC3E1E901FB9DC0A002E4900 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -41,30 +37,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		EC2BA3241FB9E9600083491F /* Ressources */ = {
+		0EDA9E981FBE144600F42D7A /* Ressources */ = {
 			isa = PBXGroup;
 			children = (
-				EC2BA3251FB9E96C0083491F /* Images */,
+				0EDA9E991FBE144F00F42D7A /* Images */,
 			);
 			path = Ressources;
 			sourceTree = "<group>";
 		};
-		EC2BA3251FB9E96C0083491F /* Images */ = {
+		0EDA9E991FBE144F00F42D7A /* Images */ = {
 			isa = PBXGroup;
 			children = (
-				EC2BA32B1FB9FEF60083491F /* palette.tiff */,
-				EC2BA3261FB9E9760083491F /* Icones */,
+				0EDA9E9A1FBE150800F42D7A /* intro.jpg */,
 			);
 			path = Images;
-			sourceTree = "<group>";
-		};
-		EC2BA3261FB9E9760083491F /* Icones */ = {
-			isa = PBXGroup;
-			children = (
-				EC2BA3291FB9EB610083491F /* icon_76.png */,
-				EC2BA3271FB9E9BB0083491F /* icon_40.png */,
-			);
-			path = Icones;
 			sourceTree = "<group>";
 		};
 		EC3E1E821FB9DC0A002E4900 = {
@@ -86,7 +72,7 @@
 		EC3E1E8D1FB9DC0A002E4900 /* projet_synthese */ = {
 			isa = PBXGroup;
 			children = (
-				EC2BA3241FB9E9600083491F /* Ressources */,
+				0EDA9E981FBE144600F42D7A /* Ressources */,
 				EC3E1E8E1FB9DC0A002E4900 /* AppDelegate.swift */,
 				EC3E1E901FB9DC0A002E4900 /* ViewController.swift */,
 				EC3E1E921FB9DC0A002E4900 /* Main.storyboard */,
@@ -156,11 +142,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EC2BA32A1FB9EB640083491F /* icon_76.png in Resources */,
+				0EDA9E9B1FBE150800F42D7A /* intro.jpg in Resources */,
 				EC3E1E991FB9DC0A002E4900 /* LaunchScreen.storyboard in Resources */,
 				EC3E1E961FB9DC0A002E4900 /* Assets.xcassets in Resources */,
-				EC2BA3281FB9E9BE0083491F /* icon_40.png in Resources */,
-				EC2BA32C1FB9FEFB0083491F /* palette.tiff in Resources */,
 				EC3E1E941FB9DC0A002E4900 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
