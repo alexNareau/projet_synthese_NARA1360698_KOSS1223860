@@ -30,15 +30,34 @@ class ViewController: UIViewController {
         
             if let _dataCA = NSData(contentsOf: URL(string: urlCountryApi)!) as Data?{
                 self.donneesPays = try! JSONDecoder().decode(Pays.self, from: _dataCA)
-                //self.afficherDonneesDePays()
+                
+                
+                
+               
+                self.afficherDonneesDePays()
+                
                 
             }
         
     }
     
     func afficherDonneesDePays(){
-       // let _valeurs = donneesPays
-       // print(_valeurs!)
+      
+        for content in (donneesPays?.Response)! {
+            let _noms = content.Name
+            let _alpha2Codes = content.Alpha2Code
+            let _regions = content.Region
+            let _latitudes = content.Latitude
+            let _longitudes = content.Longitude
+            let _monnaies = content.CurrencyName
+            let _drapeaux = content.FlagPng
+            
+            
+            print(_noms, _regions)
+            
+        }
+        
+       
     }
 
 

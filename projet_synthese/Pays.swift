@@ -8,12 +8,18 @@
 
 import Foundation
 struct Pays: Codable {
-    var response: Array<Response>
+    var Response: Array<Reponse>
 
     
 }
 
-struct Response: Codable {
+struct Reponse: Codable {
     var Name: String
+    var Alpha2Code: String
+    var Region: String
+    var Latitude: String
+    var Longitude: String
+    var CurrencyName: String
+    var FlagPng: String
 }
 
