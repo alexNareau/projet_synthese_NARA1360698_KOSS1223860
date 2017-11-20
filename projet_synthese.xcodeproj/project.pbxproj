@@ -13,6 +13,9 @@
 		EC3E1E941FB9DC0A002E4900 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC3E1E921FB9DC0A002E4900 /* Main.storyboard */; };
 		EC3E1E961FB9DC0A002E4900 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EC3E1E951FB9DC0A002E4900 /* Assets.xcassets */; };
 		EC3E1E991FB9DC0A002E4900 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC3E1E971FB9DC0A002E4900 /* LaunchScreen.storyboard */; };
+		ECF6A8031FC30E3100E276FD /* palette2.tiff in Resources */ = {isa = PBXBuildFile; fileRef = ECF6A8011FC30E2600E276FD /* palette2.tiff */; };
+		ECF6A8041FC30E3400E276FD /* palette.tiff in Resources */ = {isa = PBXBuildFile; fileRef = ECF6A8021FC30E2D00E276FD /* palette.tiff */; };
+		ECF6A80B1FC3154400E276FD /* video.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = ECF6A80A1FC3154400E276FD /* video.mp4 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +27,10 @@
 		EC3E1E951FB9DC0A002E4900 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EC3E1E981FB9DC0A002E4900 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EC3E1E9A1FB9DC0A002E4900 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ECF6A8011FC30E2600E276FD /* palette2.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = palette2.tiff; sourceTree = "<group>"; };
+		ECF6A8021FC30E2D00E276FD /* palette.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = palette.tiff; sourceTree = "<group>"; };
+		ECF6A8061FC310D900E276FD /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
+		ECF6A80A1FC3154400E276FD /* video.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = video.mp4; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,6 +55,8 @@
 		0EDA9E991FBE144F00F42D7A /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				ECF6A8021FC30E2D00E276FD /* palette.tiff */,
+				ECF6A8011FC30E2600E276FD /* palette2.tiff */,
 				0EDA9E9A1FBE150800F42D7A /* intro.jpg */,
 			);
 			path = Images;
@@ -56,8 +65,10 @@
 		EC3E1E821FB9DC0A002E4900 = {
 			isa = PBXGroup;
 			children = (
+				ECF6A80A1FC3154400E276FD /* video.mp4 */,
 				EC3E1E8D1FB9DC0A002E4900 /* projet_synthese */,
 				EC3E1E8C1FB9DC0A002E4900 /* Products */,
+				ECF6A8051FC310D900E276FD /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -81,6 +92,14 @@
 				EC3E1E9A1FB9DC0A002E4900 /* Info.plist */,
 			);
 			path = projet_synthese;
+			sourceTree = "<group>";
+		};
+		ECF6A8051FC310D900E276FD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				ECF6A8061FC310D900E276FD /* MediaPlayer.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -144,7 +163,10 @@
 			files = (
 				0EDA9E9B1FBE150800F42D7A /* intro.jpg in Resources */,
 				EC3E1E991FB9DC0A002E4900 /* LaunchScreen.storyboard in Resources */,
+				ECF6A8031FC30E3100E276FD /* palette2.tiff in Resources */,
 				EC3E1E961FB9DC0A002E4900 /* Assets.xcassets in Resources */,
+				ECF6A8041FC30E3400E276FD /* palette.tiff in Resources */,
+				ECF6A80B1FC3154400E276FD /* video.mp4 in Resources */,
 				EC3E1E941FB9DC0A002E4900 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -294,12 +316,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = NFZJ42XSFR;
+				DEVELOPMENT_TEAM = 2479QL33T8;
 				INFOPLIST_FILE = projet_synthese/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "hiu.projet-synthese";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -309,12 +333,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = NFZJ42XSFR;
+				DEVELOPMENT_TEAM = 2479QL33T8;
 				INFOPLIST_FILE = projet_synthese/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "hiu.projet-synthese";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
