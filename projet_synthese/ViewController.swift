@@ -31,13 +31,14 @@ class ViewController: UIViewController {
             if let _dataCA = NSData(contentsOf: URL(string: urlCountryApi)!) as Data?{
                 self.donneesPays = try! JSONDecoder().decode(Pays.self, from: _dataCA)
                 //self.afficherDonneesDePays()
+                
             }
         
     }
     
     func afficherDonneesDePays(){
-        let _valeurs = donneesPays
-        print(_valeurs!)
+       // let _valeurs = donneesPays
+       // print(_valeurs!)
     }
 
 

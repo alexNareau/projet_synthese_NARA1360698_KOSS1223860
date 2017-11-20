@@ -7,12 +7,13 @@
 //
 
 import Foundation
-
-class Pays: Codable {
+struct Pays: Codable {
     var response: Array<Response>
+
+    
 }
 
 struct Response: Codable {
-    //var Name: String
+    var Name: String
 }
 
