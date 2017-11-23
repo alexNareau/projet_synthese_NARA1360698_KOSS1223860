@@ -12,6 +12,8 @@ import AVFoundation
  
 class ViewController: UIViewController {
  
+    var audioPlayer: AVAudioPlayer?
+    
     @IBAction func debutVid(_ sender: UIButton) {
 
         if let path = Bundle.main.path(forResource: "video", ofType: "mp4")  //accès au url de la vidéo
@@ -28,32 +30,30 @@ class ViewController: UIViewController {
     
     var backgroundPlayer = AVAudioPlayer()
     
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        if let filePath = Bundle.main.path(forResource:"Discovery Hit", ofType:".mp3"){
+            print("trouver")
+            let fileURL = URL(fileURLWithPath:filePath)
+            do{
+                print("do")
+                audioPlayer = try
+                    AVAudioPlayer(contentsOf:fileURL)
+                audioPlayer?.prepareToPlay()
+                audioPlayer?.play()
+            }catch{
+                print(error)
+            }
+        }
+
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
 
-    func playBackgroundMusic (fileNamed: String){
-        let url = Bundle.main.url(forResource: fileNamed, withExtension: nil)
-        guard let newUrl = url else{
-            print("N'a pas trouvé le fichier \(fileNamed)")
-            return
-        }
-        do{
-            backgroundPlayer = try AVAudioPlayer(contentsOf: newUrl)
-            backgroundPlayer.numberOfLoops = -1
-            backgroundPlayer.prepareToPlay()
-            backgroundPlayer.play()
-        }
-        catch let error as NSError{
-            print(error.description)
-        }
     }
+ 
 
 }
 
