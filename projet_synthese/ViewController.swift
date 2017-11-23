@@ -34,10 +34,8 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         if let filePath = Bundle.main.path(forResource:"Discovery Hit", ofType:".mp3"){
-            print("trouver")
             let fileURL = URL(fileURLWithPath:filePath)
             do{
-                print("do")
                 audioPlayer = try
                     AVAudioPlayer(contentsOf:fileURL)
                 audioPlayer?.prepareToPlay()
