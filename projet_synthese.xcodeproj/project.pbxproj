@@ -80,6 +80,7 @@
 		EC3E1E8D1FB9DC0A002E4900 /* projet_synthese */ = {
 			isa = PBXGroup;
 			children = (
+				ECB275E21FC71C88003D70A1 /* Ressources */,
 				EC3E1EA01FB9E79A002E4900 /* Classes */,
 				EC3E1E8E1FB9DC0A002E4900 /* AppDelegate.swift */,
 				EC3E1E901FB9DC0A002E4900 /* ViewController.swift */,
@@ -97,6 +98,21 @@
 				EC3E1EA11FB9E7E3002E4900 /* Pays.swift */,
 			);
 			name = Classes;
+			sourceTree = "<group>";
+		};
+		ECB275E21FC71C88003D70A1 /* Ressources */ = {
+			isa = PBXGroup;
+			children = (
+				ECB275E31FC71C9C003D70A1 /* Images */,
+			);
+			name = Ressources;
+			sourceTree = "<group>";
+		};
+		ECB275E31FC71C9C003D70A1 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Images;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
