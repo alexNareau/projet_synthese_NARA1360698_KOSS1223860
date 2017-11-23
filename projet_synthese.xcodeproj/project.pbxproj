@@ -54,6 +54,7 @@
 		EC3E1E8D1FB9DC0A002E4900 /* projet_synthese */ = {
 			isa = PBXGroup;
 			children = (
+				ECE656A51FC7097200F618B0 /* Classes */,
 				EC3E1E8E1FB9DC0A002E4900 /* AppDelegate.swift */,
 				EC3E1E901FB9DC0A002E4900 /* ViewController.swift */,
 				EC3E1E921FB9DC0A002E4900 /* Main.storyboard */,
@@ -62,6 +63,13 @@
 				EC3E1E9A1FB9DC0A002E4900 /* Info.plist */,
 			);
 			path = projet_synthese;
+			sourceTree = "<group>";
+		};
+		ECE656A51FC7097200F618B0 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Classes;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
