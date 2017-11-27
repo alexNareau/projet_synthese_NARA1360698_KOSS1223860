@@ -14,7 +14,9 @@ import AVFoundation
 class ViewController: UIViewController {
  
     var donneesPays: Pays?
-    var audioPlayer: AVAudioPlayer?
+    //var audioPlayer: AVAudioPlayer?
+    
+    
     
     @IBAction func debutVid(_ sender: UIButton) {
 
@@ -29,13 +31,16 @@ class ViewController: UIViewController {
             })
         }
     }
+    @IBAction func bouttonRecherche(_ sender: Any) {
+        VersPageRecherche()
+    }
     
     var backgroundPlayer = AVAudioPlayer()
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        if let filePath = Bundle.main.path(forResource:"Discovery Hit", ofType:".mp3"){
+       /* if let filePath = Bundle.main.path(forResource:"Discovery Hit", ofType:".mp3"){
             let fileURL = URL(fileURLWithPath:filePath)
             do{
                 audioPlayer = try
@@ -45,7 +50,7 @@ class ViewController: UIViewController {
             }catch{
                 print(error)
             }
-        }
+        }*/
         print("i'm master")
         donneesDePays()
     }
@@ -91,41 +96,15 @@ class ViewController: UIViewController {
         
     }
     
-
+    //MARK:- Segue
+    
+   
+   func VersPageRecherche(){
+        performSegue(withIdentifier: "versRecherche", sender: nil)
+        
+    }
 }
 
 
  
- /*
-  //
-  //  ViewController.swift
-  //  projet_synthese
-  //
-  //  Created by Etudiant on 17-11-13.
-  //  Copyright © 2017 Etudiant. All rights reserved.
-  //
-  
-  import UIKit
-  
-  class ViewController: UIViewController {
-  
- 
-  
-  override func viewDidLoad() {
-  super.viewDidLoad()
-  // Do any additional setup after loading the view, typically from a nib.
-  
-  }
-  
-  override func didReceiveMemoryWarning() {
-  super.didReceiveMemoryWarning()
-  // Dispose of any resources that can be recreated.
-  }
-  
-  
- 
-  
-  }
 
-  
-  */
