@@ -35,6 +35,7 @@
 		ECB276061FC71D89003D70A1 /* icon180.png in Resources */ = {isa = PBXBuildFile; fileRef = ECB275E51FC71D83003D70A1 /* icon180.png */; };
 		ECB276071FC71D89003D70A1 /* icon1024.png in Resources */ = {isa = PBXBuildFile; fileRef = ECB275E61FC71D83003D70A1 /* icon1024.png */; };
 		ECBCBA131FC32B3300EFD821 /* Discovery Hit.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = ECBCBA121FC32B3100EFD821 /* Discovery Hit.mp3 */; };
+		ECDF6E971FCC543F006585F4 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = ECDF6E961FCC543F006585F4 /* Podfile */; };
 		ECF6A8031FC30E3100E276FD /* palette2.tiff in Resources */ = {isa = PBXBuildFile; fileRef = ECF6A8011FC30E2600E276FD /* palette2.tiff */; };
 		ECF6A8041FC30E3400E276FD /* palette.tiff in Resources */ = {isa = PBXBuildFile; fileRef = ECF6A8021FC30E2D00E276FD /* palette.tiff */; };
 		ECF6A80B1FC3154400E276FD /* video.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = ECF6A80A1FC3154400E276FD /* video.mp4 */; };
@@ -73,6 +74,7 @@
 		ECB275F41FC71D84003D70A1 /* icon20.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = icon20.png; path = projet_synthese/Assets.xcassets/AppIcon.appiconset/icon20.png; sourceTree = SOURCE_ROOT; };
 		ECB275F51FC71D84003D70A1 /* icon58-1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "icon58-1.png"; path = "projet_synthese/Assets.xcassets/AppIcon.appiconset/icon58-1.png"; sourceTree = SOURCE_ROOT; };
 		ECBCBA121FC32B3100EFD821 /* Discovery Hit.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Discovery Hit.mp3"; sourceTree = "<group>"; };
+		ECDF6E961FCC543F006585F4 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; path = Podfile; sourceTree = "<group>"; };
 		ECF6A8011FC30E2600E276FD /* palette2.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = palette2.tiff; sourceTree = "<group>"; };
 		ECF6A8021FC30E2D00E276FD /* palette.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = palette.tiff; sourceTree = "<group>"; };
 		ECF6A8061FC310D900E276FD /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
@@ -94,6 +96,7 @@
 		0EDA9E981FBE144600F42D7A /* Ressources */ = {
 			isa = PBXGroup;
 			children = (
+				ECDF6E961FCC543F006585F4 /* Podfile */,
 				ECBCBA121FC32B3100EFD821 /* Discovery Hit.mp3 */,
 				0EDA9E991FBE144F00F42D7A /* Images */,
 			);
@@ -267,6 +270,7 @@
 				ECB275FE1FC71D89003D70A1 /* icon76.jpg in Resources */,
 				ECF6A8041FC30E3400E276FD /* palette.tiff in Resources */,
 				ECF6A80B1FC3154400E276FD /* video.mp4 in Resources */,
+				ECDF6E971FCC543F006585F4 /* Podfile in Resources */,
 				ECB276021FC71D89003D70A1 /* icon120-1.png in Resources */,
 				ECB276051FC71D89003D70A1 /* icon167.png in Resources */,
 				EC3E1E941FB9DC0A002E4900 /* Main.storyboard in Resources */,
