@@ -35,6 +35,7 @@
 		ECB276061FC71D89003D70A1 /* icon180.png in Resources */ = {isa = PBXBuildFile; fileRef = ECB275E51FC71D83003D70A1 /* icon180.png */; };
 		ECB276071FC71D89003D70A1 /* icon1024.png in Resources */ = {isa = PBXBuildFile; fileRef = ECB275E61FC71D83003D70A1 /* icon1024.png */; };
 		ECBCBA131FC32B3300EFD821 /* Discovery Hit.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = ECBCBA121FC32B3100EFD821 /* Discovery Hit.mp3 */; };
+		ECC7CACB1FCC596700D1A6EA /* Pays.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECC7CACA1FCC596700D1A6EA /* Pays.swift */; };
 		ECDF6E971FCC543F006585F4 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = ECDF6E961FCC543F006585F4 /* Podfile */; };
 		ECF6A8031FC30E3100E276FD /* palette2.tiff in Resources */ = {isa = PBXBuildFile; fileRef = ECF6A8011FC30E2600E276FD /* palette2.tiff */; };
 		ECF6A8041FC30E3400E276FD /* palette.tiff in Resources */ = {isa = PBXBuildFile; fileRef = ECF6A8021FC30E2D00E276FD /* palette.tiff */; };
@@ -74,6 +75,7 @@
 		ECB275F41FC71D84003D70A1 /* icon20.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = icon20.png; path = projet_synthese/Assets.xcassets/AppIcon.appiconset/icon20.png; sourceTree = SOURCE_ROOT; };
 		ECB275F51FC71D84003D70A1 /* icon58-1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "icon58-1.png"; path = "projet_synthese/Assets.xcassets/AppIcon.appiconset/icon58-1.png"; sourceTree = SOURCE_ROOT; };
 		ECBCBA121FC32B3100EFD821 /* Discovery Hit.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Discovery Hit.mp3"; sourceTree = "<group>"; };
+		ECC7CACA1FCC596700D1A6EA /* Pays.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pays.swift; sourceTree = "<group>"; };
 		ECDF6E961FCC543F006585F4 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; path = Podfile; sourceTree = "<group>"; };
 		ECF6A8011FC30E2600E276FD /* palette2.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = palette2.tiff; sourceTree = "<group>"; };
 		ECF6A8021FC30E2D00E276FD /* palette.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = palette.tiff; sourceTree = "<group>"; };
@@ -99,6 +101,7 @@
 				ECDF6E961FCC543F006585F4 /* Podfile */,
 				ECBCBA121FC32B3100EFD821 /* Discovery Hit.mp3 */,
 				0EDA9E991FBE144F00F42D7A /* Images */,
+				ECC7CACA1FCC596700D1A6EA /* Pays.swift */,
 			);
 			path = Ressources;
 			sourceTree = "<group>";
@@ -342,6 +345,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EC3E1E911FB9DC0A002E4900 /* ViewController.swift in Sources */,
+				ECC7CACB1FCC596700D1A6EA /* Pays.swift in Sources */,
 				EC3E1E8F1FB9DC0A002E4900 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
