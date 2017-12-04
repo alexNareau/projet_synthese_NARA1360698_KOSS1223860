@@ -11,7 +11,22 @@ import AVKit
 import AVFoundation
 
  
-class ViewController: UIViewController {
+ class ViewController: UIViewController, UITableViewDataSource {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+       return donneesPays?.Response.count as! Int
+       
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let newCellule = UITableViewCell()
+        var _nomPays = "Non définis"
+        if let _sonNom = donneesPays?.Response[indexPath.row].Name{
+            _nomPays = _sonNom
+        }
+        newCellule.textLabel!.text = _nomPays
+        return newCellule
+    }
+    
  
     var donneesPays: Pays?
     //var audioPlayer: AVAudioPlayer?
@@ -78,7 +93,6 @@ class ViewController: UIViewController {
     }
     
     func afficherDonneesDePays(){
-        
         for content in (donneesPays?.Response)! {
             let _noms = content.Name
             let _alpha2Codes = content.Alpha2Code
@@ -89,10 +103,10 @@ class ViewController: UIViewController {
             let _drapeaux = content.FlagPng
             
             
-            print(_noms, _regions)
+            
             
         }
-        
+       
         
     }
     

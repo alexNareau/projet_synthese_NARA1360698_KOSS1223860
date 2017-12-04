@@ -143,8 +143,8 @@
         <!--Pays-->
         <scene sceneID="8DZ-pu-Exe">
             <objects>
-                <viewController id="5HO-9R-K69" userLabel="Pays" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="1jB-fe-axQ">
+                <viewController id="5HO-9R-K69" userLabel="Pays" customClass="VCPays" customModule="projet_synthese" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="1jB-fe-axQ" customClass="VC">
                         <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
@@ -205,6 +205,17 @@
                                 <color key="textColor" red="0.94902622699737549" green="0.95293939113616943" blue="0.95294797420501709" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VYe-Xl-5j9">
+                                <rect key="frame" x="20" y="51" width="76" height="76"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="60"/>
+                                <state key="normal" title="&gt;">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </state>
+                                <connections>
+                                    <action selector="retourARecherche:" destination="5HO-9R-K69" eventType="touchUpInside" id="Q0D-yZ-m7B"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <viewLayoutGuide key="safeArea" id="wia-J9-2EH"/>
@@ -212,12 +223,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OCG-3G-5rM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="426" y="19"/>
+            <point key="canvasLocation" x="1279" y="19"/>
         </scene>
         <!--Recherche-->
         <scene sceneID="gZM-p0-wRb">
             <objects>
-                <viewController id="pHb-Xx-XFZ" userLabel="Recherche" customClass="VCRecherche" customModule="projet_synthese" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="pHb-Xx-XFZ" userLabel="Recherche" customClass="ViewController" customModule="projet_synthese" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="luN-Bp-Y9U">
                         <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -254,6 +265,33 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="MRb-PT-OLl">
+                                <rect key="frame" x="241" y="251" width="507" height="753"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cellulePays" id="LiP-TT-QDk">
+                                        <rect key="frame" x="0.0" y="28" width="507" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="LiP-TT-QDk" id="Wbs-bB-t4T">
+                                            <rect key="frame" x="0.0" y="0.0" width="507" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5c3-nI-lrx">
+                                                    <rect key="frame" x="283" y="0.0" width="79" height="42"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="5HO-9R-K69" kind="presentation" trigger="accessoryAction" id="8hI-Qe-0HT"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="pHb-Xx-XFZ" id="amr-aK-G8L"/>
+                                </connections>
+                            </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <viewLayoutGuide key="safeArea" id="189-vP-iid"/>
@@ -261,7 +299,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eWd-77-Y0W" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="376" y="696"/>
+            <point key="canvasLocation" x="494" y="19"/>
         </scene>
         <!--credits-->
         <scene sceneID="Mvi-mv-K85">
@@ -340,7 +378,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xW5-II-SLf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1130" y="39"/>
+            <point key="canvasLocation" x="1279" y="715"/>
         </scene>
         <!--À propos-->
         <scene sceneID="egE-Te-14Q">
@@ -388,7 +426,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QQn-Eh-N90" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1129.6875" y="695.5078125"/>
+            <point key="canvasLocation" x="494" y="715"/>
         </scene>
     </scenes>
     <resources>
