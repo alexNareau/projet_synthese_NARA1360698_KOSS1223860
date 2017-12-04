@@ -20,6 +20,24 @@ class ViewController: UIViewController {
     //var cells = [LiquidFloatingCell]()
     //var floatingActionButton: LiquidFloatingActionButton!
     
+    /**
+     - Auteur:
+     Susyane Koschinsky
+     
+     - Retourne:
+     Le nom du chemin complet pour la ressource identifié par le nom et l'extension du fichier.
+     
+     - Envoi:
+     video.mp4
+     
+     - Paramètre:
+         - forResources: le nom de la ressource. Ne peut pas être vide.
+         - ofType: Le nom de l'extention. Ne peut pas être vide.
+     
+     - Description détaillée:
+     Fonction qui permet de faire jouer une vidéo format mp4 dans l'application.
+     */
+    
     @IBAction func debutVid(_ sender: UIButton) {
 
         if let path = Bundle.main.path(forResource: "video", ofType: "mp4")  //accès au url de la vidéo
@@ -38,7 +56,25 @@ class ViewController: UIViewController {
     
     var backgroundPlayer = AVAudioPlayer()
     
-    
+    /**
+     
+     - Auteur:
+     Susyane Koschinsky
+     
+     - Retourne:
+     Le nom du chemin complet pour la ressource identifié par le nom et l'extension du fichier.
+     
+     - Envoi:
+     Discovery Hit.mp3
+     
+     - Paramètre:
+         - forResources: le nom de la ressource. Ne peut pas être vide.
+         - ofType: Le nom de l'extention. Ne peut pas être vide.
+         - fileUrlWithPath:Initialise un nouveau fichier créé. Peux être vide.
+     - Description détaillée:
+     Fonction qui permet de faire jouer une musique dès l'ouverture de l'application.
+     */
+
     override func viewDidLoad() {
         super.viewDidLoad()
         if let filePath = Bundle.main.path(forResource:"Discovery Hit", ofType:".mp3"){
@@ -62,7 +98,23 @@ class ViewController: UIViewController {
         super.didReceiveMemoryWarning()
 
     }
- 
+ /**
+     
+     - Auteur:
+     Alexandre Nareau
+     
+     - Retourne:
+     Les données de l'API country
+     
+     - Envoi:
+     http://countryapi.gear.host/v1/Country/getCountries
+     
+     - Paramètre:
+         - contentsOf:
+     
+     - Description détaillée:
+     Fonction qui permet de prendre les données de l'API country et de les décoder en JSON.
+  */
     //MARK:- Obtension de données
     func donneesDePays(){
         let urlCountryApi = "http://countryapi.gear.host/v1/Country/getCountries"
@@ -79,7 +131,19 @@ class ViewController: UIViewController {
         }
         
     }
-    
+    /**
+     
+     - Auteur:
+     Alexandre Nareau
+     
+     - Retourne:
+     
+     - Envoi:
+     
+     - Paramètre:
+     
+     - Description détaillée:
+     */
     func afficherDonneesDePays(){
         
         for content in (donneesPays?.Response)! {
