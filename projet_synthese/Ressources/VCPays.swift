@@ -10,13 +10,24 @@ import UIKit
 
 class VCPays: UIViewController {
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
-    }
+   public var myPosition = ""
+    
     @IBAction func retourARecherche(_ sender: Any) {
         dismiss(animated: true, completion: nil)
+    }
+    
+    @IBOutlet weak var affichagePays: UILabel!
+    @IBOutlet weak var affichageCode: UILabel!
+    @IBOutlet weak var affichageMonnaie: UILabel!
+    @IBOutlet weak var affichageRegion: UILabel!
+    @IBOutlet weak var affichageLongitude: UILabel!
+    @IBOutlet weak var affichageLatitude: UILabel!
+    @IBOutlet weak var affichageDrapeau: UIImageView!
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        print("JE SUIS LOADÉ")
+    //    affichagePays.text = Pays.Response[selectionDeBase].Name
     }
     
     override func didReceiveMemoryWarning() {

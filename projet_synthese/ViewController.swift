@@ -13,12 +13,12 @@ import AVFoundation
  
  class ViewController: UIViewController, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-       return donneesPays?.Response.count as! Int
+       return donneesPays?.Response.count ?? 0
        
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let newCellule = UITableViewCell()
+        let newCellule = tableView.dequeueReusableCell(withIdentifier: "laCellule", for: indexPath)
         var _nomPays = "Non définis"
         if let _sonNom = donneesPays?.Response[indexPath.row].Name{
             _nomPays = _sonNom
@@ -27,11 +27,13 @@ import AVFoundation
         return newCellule
     }
     
- 
+    
+    private var selectionDeBase = 0
     var donneesPays: Pays?
     //var audioPlayer: AVAudioPlayer?
     
     
+    @IBOutlet weak var CVpays: UITableView!
     
     @IBAction func debutVid(_ sender: UIButton) {
 
@@ -50,7 +52,7 @@ import AVFoundation
         VersPageRecherche()
     }
     
-    var backgroundPlayer = AVAudioPlayer()
+    //var backgroundPlayer = AVAudioPlayer()
     
     
     override func viewDidLoad() {
@@ -59,7 +61,7 @@ import AVFoundation
             let fileURL = URL(fileURLWithPath:filePath)
             do{
                 audioPlayer = try
-                    AVAudioPlayer(contentsOf:fileURL)
+                AVAudioPlayer(contentsOf:fileURL)
                 audioPlayer?.prepareToPlay()
                 audioPlayer?.play()
             }catch{
@@ -77,18 +79,10 @@ import AVFoundation
  
     //MARK:- Obtension de données
     func donneesDePays(){
-        let urlCountryApi = "http://countryapi.gear.host/v1/Country/getCountries"
-        
-        if let _dataCA = NSData(contentsOf: URL(string: urlCountryApi)!) as Data?{
-            self.donneesPays = try! JSONDecoder().decode(Pays.self, from: _dataCA)
-            
-            
-            
-            
-            self.afficherDonneesDePays()
-            
-            
-        }
+       let urlCountryApi = "http://countryapi.gear.host/v1/Country/getCountries"
+       let _dataCA = try! Data(contentsOf: URL(string: urlCountryApi)!)
+       self.donneesPays = try! JSONDecoder().decode(Pays.self, from: _dataCA)
+       self.afficherDonneesDePays()
         
     }
     
@@ -117,6 +111,16 @@ import AVFoundation
         performSegue(withIdentifier: "versRecherche", sender: nil)
         
     }
+    
+    // MARK: - Navigation
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        selectionDeBase = CVpays.indexPath(for: sender as! UITableViewCell)!.row
+      
+        
+       
+    } //  prepare(for segue
+    
+    
 }
 
 

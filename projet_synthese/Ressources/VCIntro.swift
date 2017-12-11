@@ -23,13 +23,13 @@ class VCIntro: UIViewController {
                 audioPlayer = try
                     AVAudioPlayer(contentsOf:fileURL)
                 audioPlayer?.prepareToPlay()
-                audioPlayer?.play()
+               // audioPlayer?.play()
             }catch{
                 print(error)
             }
         }
         
-        DispatchQueue.main.asyncAfter(deadline: .now() + 2.5) {
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
             self.VersPageAccueil()
         }
     }
