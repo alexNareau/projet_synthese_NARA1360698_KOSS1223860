@@ -40,7 +40,7 @@
 		ECC074FF1FDEC2B3007E34E5 /* loupe.png in Resources */ = {isa = PBXBuildFile; fileRef = ECC074FE1FDEC2AF007E34E5 /* loupe.png */; };
 		ECC075011FDEC3B8007E34E5 /* documentPromo.pdf in Resources */ = {isa = PBXBuildFile; fileRef = ECC075001FDEC3B2007E34E5 /* documentPromo.pdf */; };
 		ECC075031FDEC4E5007E34E5 /* animationCap.jpg in Resources */ = {isa = PBXBuildFile; fileRef = ECC075021FDEC4E1007E34E5 /* animationCap.jpg */; };
-		ECC075061FDEE198007E34E5 /* video-camera.svg in Resources */ = {isa = PBXBuildFile; fileRef = ECC075051FDEE192007E34E5 /* video-camera.svg */; };
+		ECC0750A1FDEE578007E34E5 /* techno.png in Resources */ = {isa = PBXBuildFile; fileRef = ECC075091FDEE4FB007E34E5 /* techno.png */; };
 		ECC7CACB1FCC596700D1A6EA /* Pays.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECC7CACA1FCC596700D1A6EA /* Pays.swift */; };
 		ECDF6E971FCC543F006585F4 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = ECDF6E961FCC543F006585F4 /* Podfile */; };
 		ECF6A8031FC30E3100E276FD /* palette2.tiff in Resources */ = {isa = PBXBuildFile; fileRef = ECF6A8011FC30E2600E276FD /* palette2.tiff */; };
@@ -86,8 +86,7 @@
 		ECC074FE1FDEC2AF007E34E5 /* loupe.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = loupe.png; path = "../../../../../../../Volumes/CACA D'OIE/production/synthese/loupe.png"; sourceTree = "<group>"; };
 		ECC075001FDEC3B2007E34E5 /* documentPromo.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = documentPromo.pdf; path = "../../../../../../../Volumes/CACA D'OIE/production/synthese/documentPromo.pdf"; sourceTree = "<group>"; };
 		ECC075021FDEC4E1007E34E5 /* animationCap.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = animationCap.jpg; sourceTree = "<group>"; };
-		ECC075041FDEE156007E34E5 /* technology.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = technology.png; sourceTree = "<group>"; };
-		ECC075051FDEE192007E34E5 /* video-camera.svg */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = "video-camera.svg"; sourceTree = "<group>"; };
+		ECC075091FDEE4FB007E34E5 /* techno.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = techno.png; sourceTree = "<group>"; };
 		ECC7CACA1FCC596700D1A6EA /* Pays.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pays.swift; sourceTree = "<group>"; };
 		ECDF6E961FCC543F006585F4 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; path = Podfile; sourceTree = "<group>"; };
 		ECF6A8011FC30E2600E276FD /* palette2.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = palette2.tiff; sourceTree = "<group>"; };
@@ -122,14 +121,13 @@
 		0EDA9E991FBE144F00F42D7A /* Images */ = {
 			isa = PBXGroup;
 			children = (
-				ECC075041FDEE156007E34E5 /* technology.png */,
 				ECC075021FDEC4E1007E34E5 /* animationCap.jpg */,
 				ECC075001FDEC3B2007E34E5 /* documentPromo.pdf */,
 				ECC074FE1FDEC2AF007E34E5 /* loupe.png */,
 				EC070A101FD58F2600D37894 /* favoris.png */,
 				EC070A0F1FD58F2500D37894 /* paysRecherche.png */,
 				ECB275F41FC71D84003D70A1 /* icon20.png */,
-				ECC075051FDEE192007E34E5 /* video-camera.svg */,
+				ECC075091FDEE4FB007E34E5 /* techno.png */,
 				ECB275F11FC71D84003D70A1 /* icon29.jpg */,
 				ECB275E41FC71D83003D70A1 /* icon40-1.png */,
 				ECB275E81FC71D84003D70A1 /* icon40-2.png */,
@@ -278,6 +276,7 @@
 				EC3E1E991FB9DC0A002E4900 /* LaunchScreen.storyboard in Resources */,
 				ECB275FF1FC71D89003D70A1 /* icon80-1.png in Resources */,
 				ECB276061FC71D89003D70A1 /* icon180.png in Resources */,
+				ECC0750A1FDEE578007E34E5 /* techno.png in Resources */,
 				ECB276041FC71D89003D70A1 /* icon152.png in Resources */,
 				ECB275FA1FC71D89003D70A1 /* icon40.png in Resources */,
 				ECF6A8031FC30E3100E276FD /* palette2.tiff in Resources */,
@@ -293,7 +292,6 @@
 				ECB276001FC71D89003D70A1 /* icon80.png in Resources */,
 				ECBCBA131FC32B3300EFD821 /* Discovery Hit.mp3 in Resources */,
 				ECC074FF1FDEC2B3007E34E5 /* loupe.png in Resources */,
-				ECC075061FDEE198007E34E5 /* video-camera.svg in Resources */,
 				ECB275FE1FC71D89003D70A1 /* icon76.jpg in Resources */,
 				ECF6A8041FC30E3400E276FD /* palette.tiff in Resources */,
 				ECF6A80B1FC3154400E276FD /* video.mp4 in Resources */,
