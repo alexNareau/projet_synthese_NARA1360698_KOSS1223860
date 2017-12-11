@@ -11,7 +11,6 @@
 		AEB87F299180240C40ADA467 /* Pods_projet_synthese.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 264511DC37E08D2EB0CB9A37 /* Pods_projet_synthese.framework */; };
 		EC070A111FD58F2900D37894 /* favoris.png in Resources */ = {isa = PBXBuildFile; fileRef = EC070A101FD58F2600D37894 /* favoris.png */; };
 		EC070A121FD58F2C00D37894 /* paysRecherche.png in Resources */ = {isa = PBXBuildFile; fileRef = EC070A0F1FD58F2500D37894 /* paysRecherche.png */; };
-		EC070A191FD5A80600D37894 /* documentPromo.pdf in Resources */ = {isa = PBXBuildFile; fileRef = EC070A181FD5A7FD00D37894 /* documentPromo.pdf */; };
 		EC3E1E8F1FB9DC0A002E4900 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC3E1E8E1FB9DC0A002E4900 /* AppDelegate.swift */; };
 		EC3E1E911FB9DC0A002E4900 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC3E1E901FB9DC0A002E4900 /* ViewController.swift */; };
 		EC3E1E941FB9DC0A002E4900 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC3E1E921FB9DC0A002E4900 /* Main.storyboard */; };
@@ -38,6 +37,10 @@
 		ECB276061FC71D89003D70A1 /* icon180.png in Resources */ = {isa = PBXBuildFile; fileRef = ECB275E51FC71D83003D70A1 /* icon180.png */; };
 		ECB276071FC71D89003D70A1 /* icon1024.png in Resources */ = {isa = PBXBuildFile; fileRef = ECB275E61FC71D83003D70A1 /* icon1024.png */; };
 		ECBCBA131FC32B3300EFD821 /* Discovery Hit.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = ECBCBA121FC32B3100EFD821 /* Discovery Hit.mp3 */; };
+		ECC074FF1FDEC2B3007E34E5 /* loupe.png in Resources */ = {isa = PBXBuildFile; fileRef = ECC074FE1FDEC2AF007E34E5 /* loupe.png */; };
+		ECC075011FDEC3B8007E34E5 /* documentPromo.pdf in Resources */ = {isa = PBXBuildFile; fileRef = ECC075001FDEC3B2007E34E5 /* documentPromo.pdf */; };
+		ECC075031FDEC4E5007E34E5 /* animationCap.jpg in Resources */ = {isa = PBXBuildFile; fileRef = ECC075021FDEC4E1007E34E5 /* animationCap.jpg */; };
+		ECC075061FDEE198007E34E5 /* video-camera.svg in Resources */ = {isa = PBXBuildFile; fileRef = ECC075051FDEE192007E34E5 /* video-camera.svg */; };
 		ECC7CACB1FCC596700D1A6EA /* Pays.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECC7CACA1FCC596700D1A6EA /* Pays.swift */; };
 		ECDF6E971FCC543F006585F4 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = ECDF6E961FCC543F006585F4 /* Podfile */; };
 		ECF6A8031FC30E3100E276FD /* palette2.tiff in Resources */ = {isa = PBXBuildFile; fileRef = ECF6A8011FC30E2600E276FD /* palette2.tiff */; };
@@ -52,8 +55,6 @@
 		7DAA81DA7D3C4B17916E19CC /* Pods-projet_synthese.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-projet_synthese.release.xcconfig"; path = "Pods/Target Support Files/Pods-projet_synthese/Pods-projet_synthese.release.xcconfig"; sourceTree = "<group>"; };
 		EC070A0F1FD58F2500D37894 /* paysRecherche.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = paysRecherche.png; sourceTree = "<group>"; };
 		EC070A101FD58F2600D37894 /* favoris.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = favoris.png; sourceTree = "<group>"; };
-		EC070A151FD590B700D37894 /* loupe.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = loupe.png; path = ../../../../loupe.png; sourceTree = "<group>"; };
-		EC070A181FD5A7FD00D37894 /* documentPromo.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = documentPromo.pdf; path = ../../../../documentPromo.pdf; sourceTree = "<group>"; };
 		EC3E1E8B1FB9DC0A002E4900 /* projet_synthese.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = projet_synthese.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC3E1E8E1FB9DC0A002E4900 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EC3E1E901FB9DC0A002E4900 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -82,6 +83,11 @@
 		ECB275F41FC71D84003D70A1 /* icon20.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = icon20.png; path = projet_synthese/Assets.xcassets/AppIcon.appiconset/icon20.png; sourceTree = SOURCE_ROOT; };
 		ECB275F51FC71D84003D70A1 /* icon58-1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "icon58-1.png"; path = "projet_synthese/Assets.xcassets/AppIcon.appiconset/icon58-1.png"; sourceTree = SOURCE_ROOT; };
 		ECBCBA121FC32B3100EFD821 /* Discovery Hit.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Discovery Hit.mp3"; sourceTree = "<group>"; };
+		ECC074FE1FDEC2AF007E34E5 /* loupe.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = loupe.png; path = "../../../../../../../Volumes/CACA D'OIE/production/synthese/loupe.png"; sourceTree = "<group>"; };
+		ECC075001FDEC3B2007E34E5 /* documentPromo.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = documentPromo.pdf; path = "../../../../../../../Volumes/CACA D'OIE/production/synthese/documentPromo.pdf"; sourceTree = "<group>"; };
+		ECC075021FDEC4E1007E34E5 /* animationCap.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = animationCap.jpg; sourceTree = "<group>"; };
+		ECC075041FDEE156007E34E5 /* technology.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = technology.png; sourceTree = "<group>"; };
+		ECC075051FDEE192007E34E5 /* video-camera.svg */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = "video-camera.svg"; sourceTree = "<group>"; };
 		ECC7CACA1FCC596700D1A6EA /* Pays.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pays.swift; sourceTree = "<group>"; };
 		ECDF6E961FCC543F006585F4 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; path = Podfile; sourceTree = "<group>"; };
 		ECF6A8011FC30E2600E276FD /* palette2.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = palette2.tiff; sourceTree = "<group>"; };
@@ -116,11 +122,14 @@
 		0EDA9E991FBE144F00F42D7A /* Images */ = {
 			isa = PBXGroup;
 			children = (
-				EC070A181FD5A7FD00D37894 /* documentPromo.pdf */,
-				EC070A151FD590B700D37894 /* loupe.png */,
+				ECC075041FDEE156007E34E5 /* technology.png */,
+				ECC075021FDEC4E1007E34E5 /* animationCap.jpg */,
+				ECC075001FDEC3B2007E34E5 /* documentPromo.pdf */,
+				ECC074FE1FDEC2AF007E34E5 /* loupe.png */,
 				EC070A101FD58F2600D37894 /* favoris.png */,
 				EC070A0F1FD58F2500D37894 /* paysRecherche.png */,
 				ECB275F41FC71D84003D70A1 /* icon20.png */,
+				ECC075051FDEE192007E34E5 /* video-camera.svg */,
 				ECB275F11FC71D84003D70A1 /* icon29.jpg */,
 				ECB275E41FC71D83003D70A1 /* icon40-1.png */,
 				ECB275E81FC71D84003D70A1 /* icon40-2.png */,
@@ -265,7 +274,6 @@
 				ECB276031FC71D89003D70A1 /* icon120.png in Resources */,
 				ECB275F71FC71D89003D70A1 /* icon29.jpg in Resources */,
 				ECB275F81FC71D89003D70A1 /* icon40-1.png in Resources */,
-				EC070A191FD5A80600D37894 /* documentPromo.pdf in Resources */,
 				ECB275FB1FC71D89003D70A1 /* icon58-1.png in Resources */,
 				EC3E1E991FB9DC0A002E4900 /* LaunchScreen.storyboard in Resources */,
 				ECB275FF1FC71D89003D70A1 /* icon80-1.png in Resources */,
@@ -276,12 +284,16 @@
 				ECB276011FC71D89003D70A1 /* icon87.png in Resources */,
 				ECB275DE1FC71608003D70A1 /* paper-planes-1023097_640.png in Resources */,
 				ECB275FC1FC71D89003D70A1 /* icon58.png in Resources */,
+				ECC075031FDEC4E5007E34E5 /* animationCap.jpg in Resources */,
 				ECB276071FC71D89003D70A1 /* icon1024.png in Resources */,
+				ECC075011FDEC3B8007E34E5 /* documentPromo.pdf in Resources */,
 				EC3E1E961FB9DC0A002E4900 /* Assets.xcassets in Resources */,
 				ECB275F91FC71D89003D70A1 /* icon40-2.png in Resources */,
 				ECB275E01FC716C4003D70A1 /* 15481-NQDIVL.jpg in Resources */,
 				ECB276001FC71D89003D70A1 /* icon80.png in Resources */,
 				ECBCBA131FC32B3300EFD821 /* Discovery Hit.mp3 in Resources */,
+				ECC074FF1FDEC2B3007E34E5 /* loupe.png in Resources */,
+				ECC075061FDEE198007E34E5 /* video-camera.svg in Resources */,
 				ECB275FE1FC71D89003D70A1 /* icon76.jpg in Resources */,
 				ECF6A8041FC30E3400E276FD /* palette.tiff in Resources */,
 				ECF6A80B1FC3154400E276FD /* video.mp4 in Resources */,
@@ -504,7 +516,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 2479QL33T8;
+				DEVELOPMENT_TEAM = NFZJ42XSFR;
 				INFOPLIST_FILE = projet_synthese/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "hiu.projet-synthese";
@@ -522,7 +534,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 2479QL33T8;
+				DEVELOPMENT_TEAM = NFZJ42XSFR;
 				INFOPLIST_FILE = projet_synthese/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "hiu.projet-synthese";
