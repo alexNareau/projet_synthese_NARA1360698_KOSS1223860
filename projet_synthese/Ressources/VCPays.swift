@@ -10,7 +10,11 @@ import UIKit
 
 class VCPays: UIViewController {
 
-   public var myPosition = ""
+    var vc: ViewController?
+    var myPosition = (Any).self
+    
+    
+    
     
     @IBAction func retourARecherche(_ sender: Any) {
         dismiss(animated: true, completion: nil)
@@ -26,8 +30,13 @@ class VCPays: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+       
         print("JE SUIS LOADÉ")
-    //    affichagePays.text = Pays.Response[selectionDeBase].Name
+       // let test = vc?.donneesPays?.Response[myPosition]
+        //print("TESTTTTTT---------\(noms)")
+        
+       //affichagePays.text = Pays.Response[myPosition].Name
     }
     
     override func didReceiveMemoryWarning() {

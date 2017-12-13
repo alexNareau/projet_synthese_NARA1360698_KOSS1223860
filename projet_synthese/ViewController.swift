@@ -10,6 +10,7 @@ import UIKit
 import AVKit
 import AVFoundation
 import Floaty
+import RealmSwift
 
  
  class ViewController: UIViewController, UITableViewDataSource, FloatyDelegate {
@@ -113,24 +114,38 @@ import Floaty
         
     }
     
+   
+    
+    
     func afficherDonneesDePays(){
-        for content in (donneesPays?.Response)! {
-            let _noms = content.Name
-            let _alpha2Codes = content.Alpha2Code
-            let _regions = content.Region
-            let _latitudes = content.Latitude
-            let _longitudes = content.Longitude
-            let _monnaies = content.CurrencyName
-            let _drapeaux = content.FlagPng
+       // for content in (donneesPays?.Response)! {
+          //  let _noms = donneesPays?.Response[selectionDeBase].Name
+          //  let _alpha2Codes = content.Alpha2Code
+            //let _regions = content.Region
+            //let _latitudes = content.Latitude
+            //let _longitudes = content.Longitude
+            //let _monnaies = content.CurrencyName
+            //let _drapeaux = content.FlagPng
             
             
             
-            
-        }
+           
+       // }
        
         
     }
     
+    // MARK: - Navigation
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        selectionDeBase = CVpays.indexPath(for: sender as! UITableViewCell)!.row
+        
+        let destination = segue.destination as! VCPays
+        destination.myPosition = donneesPays?.Response[selectionDeBase]
+        
+        
+        
+        
+    } //  prepare(for segue
     //MARK:- Segue
     
    
@@ -139,17 +154,20 @@ import Floaty
         
     }
     
-    // MARK: - Navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        selectionDeBase = CVpays.indexPath(for: sender as! UITableViewCell)!.row
-      
-        
-       
-    } //  prepare(for segue
-    
-    
+  
 }
 
-
+ /*override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+    
+    let selection = monCV.indexPath(for: sender as! UICollectionViewCell)!.row
+    
+    print("# Exécution de la méthode: prepareForSegue pour la cellule numéro: \(selection)\n")
+    
+    let destination = segue.destination as! Details
+    
+    destination.infoCourante = pub[selection]
+    
+    print("# Exécution de : prepare:for segue\n")
+ } */
  
 
