@@ -9,7 +9,7 @@
 import UIKit
 import AVKit
 import AVFoundation
-//import LiquidFloatingActionButton
+
 
 
  
@@ -17,8 +17,6 @@ class ViewController: UIViewController {
  
     var donneesPays: Pays?
     var audioPlayer: AVAudioPlayer?
-    //var cells = [LiquidFloatingCell]()
-    //var floatingActionButton: LiquidFloatingActionButton!
     
     /**
      - Auteur:
@@ -40,7 +38,7 @@ class ViewController: UIViewController {
     
     @IBAction func debutVid(_ sender: UIButton) {
 
-        if let path = Bundle.main.path(forResource: "video", ofType: "mp4")  //accès au url de la vidéo
+        if let path = Bundle.main.path(forResource: "animationprod", ofType: "mp4")  //accès au url de la vidéo
         {
             let video = AVPlayer(url: URL(fileURLWithPath: path)) //accès à la vidéo elle-même
             let videoPlayer = AVPlayerViewController()
