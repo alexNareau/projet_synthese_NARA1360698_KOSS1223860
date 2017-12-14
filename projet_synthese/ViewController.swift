@@ -25,6 +25,7 @@ import RealmSwift
         if let _sonNom = donneesPays?.Response[indexPath.row].Name{
             _nomPays = _sonNom
         }
+       
         newCellule.textLabel!.text = _nomPays
         return newCellule
     }
@@ -32,7 +33,7 @@ import RealmSwift
     
     private var selectionDeBase = 0
     var donneesPays: Pays?
-    //var audioPlayer: AVAudioPlayer?
+    var audioPlayer: AVAudioPlayer?
     
     
     
@@ -114,15 +115,15 @@ import RealmSwift
        let urlCountryApi = "http://countryapi.gear.host/v1/Country/getCountries"
        let _dataCA = try! Data(contentsOf: URL(string: urlCountryApi)!)
        self.donneesPays = try! JSONDecoder().decode(Pays.self, from: _dataCA)
-       self.afficherDonneesDePays()
-        
+       //self.afficherDonneesDePays()
+       
     }
     
    
     
     
     func afficherDonneesDePays(){
-       // for content in (donneesPays?.Response)! {
+        //for content in (donneesPays?.Response)! {
           //  let _noms = donneesPays?.Response[selectionDeBase].Name
           //  let _alpha2Codes = content.Alpha2Code
             //let _regions = content.Region
@@ -145,7 +146,7 @@ import RealmSwift
             destination.myPosition = donneesPays?.Response[selectionDeBase]
         }
         
-    } //  prepare(for segue
+    } 
     //MARK:- Segue
     
    
@@ -156,7 +157,11 @@ import RealmSwift
  
  //MARK:- Realm
 
- 
+    /*let realm = try! Realm()
+    
+    try! realm.write {
+    realm.add(myDog)
+    }*/
  
  
 }
