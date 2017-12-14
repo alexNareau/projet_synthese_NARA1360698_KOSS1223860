@@ -31,6 +31,7 @@ import RealmSwift
     }
     
     
+    
     private var selectionDeBase = 0
     var donneesPays: Pays?
     var audioPlayer: AVAudioPlayer?
@@ -39,19 +40,7 @@ import RealmSwift
     
     @IBOutlet weak var CVpays: UITableView!
     
-    @IBAction func debutVid(_ sender: UIButton) {
-
-        if let path = Bundle.main.path(forResource: "video", ofType: "mp4")  //accès au url de la vidéo
-        {
-            let video = AVPlayer(url: URL(fileURLWithPath: path)) //accès à la vidéo elle-même
-            let videoPlayer = AVPlayerViewController()
-            videoPlayer.player = video
-            
-            present(videoPlayer, animated: true, completion: {
-                video.play()
-            })
-        }
-    }
+    
     @IBAction func bouttonRecherche(_ sender: Any) {
         VersPageRecherche()
     }
@@ -61,7 +50,7 @@ import RealmSwift
     
     override func viewDidLoad() {
         super.viewDidLoad()
-       /* if let filePath = Bundle.main.path(forResource:"Discovery Hit", ofType:".mp3"){
+        if let filePath = Bundle.main.path(forResource:"Discovery Hit", ofType:".mp3"){
             let fileURL = URL(fileURLWithPath:filePath)
             do{
                 audioPlayer = try
@@ -71,10 +60,8 @@ import RealmSwift
             }catch{
                 print(error)
             }
-        }*/
-        print("i'm master")
-        print(Realm.Configuration.defaultConfiguration.fileURL!)
-        print("i'm master")
+        }
+        
         layoutFAB()
         donneesDePays()
     }
