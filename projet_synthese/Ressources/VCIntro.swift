@@ -23,7 +23,7 @@ class VCIntro: UIViewController {
                 audioPlayer = try
                     AVAudioPlayer(contentsOf:fileURL)
                 audioPlayer?.prepareToPlay()
-               // audioPlayer?.play()
+                audioPlayer?.play()
             }catch{
                 print(error)
             }

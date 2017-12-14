@@ -50,17 +50,7 @@ import RealmSwift
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        if let filePath = Bundle.main.path(forResource:"Discovery Hit", ofType:".mp3"){
-            let fileURL = URL(fileURLWithPath:filePath)
-            do{
-                audioPlayer = try
-                AVAudioPlayer(contentsOf:fileURL)
-                audioPlayer?.prepareToPlay()
-                audioPlayer?.play()
-            }catch{
-                print(error)
-            }
-        }
+        
         
         layoutFAB()
         donneesDePays()
@@ -86,11 +76,7 @@ import RealmSwift
         fab.addItem(title: "Credits"){item in self.performSegue(withIdentifier: "versCredit", sender: nil)}
         fab.addItem(title: "À propos"){item in self.performSegue(withIdentifier: "versAPropos", sender: nil)}
         
-        /*fab.addItem("Become an Admin", icon: UIImage(named: "Contacts Filled.png")) { item in
-            let alert = UIAlertController(title: "Become an Admin", message: "Send a request to be an admin and be able to write notices", preferredStyle: .alert)
-            alert.addAction(UIAlertAction(title: "Send Request", style: .default, handler: nil))
-            self.present(alert, animated: true, completion: nil)
-        }*/
+        
         fab.fabDelegate = self
         
         self.view.addSubview(fab)
@@ -109,19 +95,19 @@ import RealmSwift
    
     
     
-    func afficherDonneesDePays(){
-        //for content in (donneesPays?.Response)! {
-          //  let _noms = donneesPays?.Response[selectionDeBase].Name
-          //  let _alpha2Codes = content.Alpha2Code
-            //let _regions = content.Region
-            //let _latitudes = content.Latitude
-            //let _longitudes = content.Longitude
-            //let _monnaies = content.CurrencyName
-            //let _drapeaux = content.FlagPng
-       // }
+    /*func afficherDonneesDePays(){
+        for content in (donneesPays?.Response)! {
+            let _noms = donneesPays?.Response[selectionDeBase].Name
+            let _alpha2Codes = content.Alpha2Code
+            let _regions = content.Region
+            let _latitudes = content.Latitude
+            let _longitudes = content.Longitude
+            let _monnaies = content.CurrencyName
+            let _drapeaux = content.FlagPng
+        }
        
         
-    }
+    }*/
     
     // MARK: - Navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -142,13 +128,7 @@ import RealmSwift
         
     }
  
- //MARK:- Realm
 
-    /*let realm = try! Realm()
-    
-    try! realm.write {
-    realm.add(myDog)
-    }*/
  
  
 }
