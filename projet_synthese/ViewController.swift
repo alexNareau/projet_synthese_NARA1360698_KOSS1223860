@@ -1,4 +1,3 @@
- //
 //  ViewController.swift
 //  projet_synthese
 //
@@ -11,8 +10,6 @@ import AVKit
 import AVFoundation
 
 
-
- 
 class ViewController: UIViewController {
  
     var donneesPays: Pays?
@@ -26,7 +23,7 @@ class ViewController: UIViewController {
      Le nom du chemin complet pour la ressource identifié par le nom et l'extension du fichier.
      
      - Envoi:
-     video.mp4
+     animationprod.mp4 / La vidéo de présentation
      
      - Paramètre:
          - forResources: le nom de la ressource. Ne peut pas être vide.
@@ -49,9 +46,7 @@ class ViewController: UIViewController {
             })
         }
     }
-    
-    
-    
+
     var backgroundPlayer = AVAudioPlayer()
     
     /**
@@ -60,17 +55,18 @@ class ViewController: UIViewController {
      Susyane Koschinsky
      
      - Retourne:
-     Le nom du chemin complet pour la ressource identifié par le nom et l'extension du fichier.
+        -Le nom du chemin complet pour la ressource identifié par le nom et l'extension du fichier.
      
      - Envoi:
-     Discovery Hit.mp3
+        -Discovery Hit.mp3
      
      - Paramètre:
          - forResources: le nom de la ressource. Ne peut pas être vide.
          - ofType: Le nom de l'extention. Ne peut pas être vide.
          - fileUrlWithPath:Initialise un nouveau fichier créé. Peux être vide.
+     
      - Description détaillée:
-     Fonction qui permet de faire jouer une musique dès l'ouverture de l'application.
+        -Fonction qui permet de faire jouer une musique dès l'ouverture de l'application.
      */
 
     override func viewDidLoad() {
@@ -86,7 +82,7 @@ class ViewController: UIViewController {
                 print(error)
             }
         }
-        print("i'm master")
+        print("la video fonctionne")
         donneesDePays()
         
         //createFloatingButton()
@@ -119,13 +115,8 @@ class ViewController: UIViewController {
         
         if let _dataCA = NSData(contentsOf: URL(string: urlCountryApi)!) as Data?{
             self.donneesPays = try! JSONDecoder().decode(Pays.self, from: _dataCA)
-            
-            
-            
-            
+        
             self.afficherDonneesDePays()
-            
-            
         }
         
     }
@@ -135,12 +126,16 @@ class ViewController: UIViewController {
      Alexandre Nareau
      
      - Retourne:
+        - Un array des données de l'API.
      
      - Envoi:
+        - Les données des pays voulu.
      
      - Paramètre:
+        - for content in
      
      - Description détaillée:
+        - Fonction qui permet de faire afficher les données des Pays dans l'application.
      */
     func afficherDonneesDePays(){
         
@@ -158,16 +153,7 @@ class ViewController: UIViewController {
             
         }
         
-        
     }
-    
-  /*  private func createFloatingButtons(){
-        cells.append(createButtonCell("ic_cloud"))
-    }
-    
-    private func createButtonCell(iconName: String ->LiquidFloatingCell){
-        
-    }*/
 
 }
 
