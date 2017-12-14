@@ -7,10 +7,26 @@
 //
 
 import Foundation
+
+/**
+ - Auteur:
+ Alexandre Nareau
+ 
+ - Retourne:
+    - Un String pour chaque variable
+ 
+ - Envoi:
+    -
+ 
+ - Paramètre:
+    -
+ 
+ - Description détaillée:
+    - 
+ */
 struct Pays: Codable {
     var Response: Array<Reponse>
-    
-    
+
 }
 
 struct Reponse: Codable {
