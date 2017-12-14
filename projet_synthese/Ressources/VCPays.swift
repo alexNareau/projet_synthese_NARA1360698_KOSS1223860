@@ -7,13 +7,21 @@
 //
 
 import UIKit
+import MapKit
 
 class VCPays: UIViewController {
 
     var vc: ViewController?
-    var myPosition = (Any).self
+    var myPosition:Reponse!
+    let regionRadius: CLLocationDistance = 3000000
+    func centerMapOnLocation(location: CLLocation) {
+        let coordinateRegion = MKCoordinateRegionMakeWithDistance(location.coordinate,
+                                                                  regionRadius, regionRadius)
+        affichageMap.setRegion(coordinateRegion, animated: true)
+    }
     
-    
+    @IBAction func ajoutFavoris(_ sender: Any) {
+    }
     
     
     @IBAction func retourARecherche(_ sender: Any) {
@@ -27,16 +35,45 @@ class VCPays: UIViewController {
     @IBOutlet weak var affichageLongitude: UILabel!
     @IBOutlet weak var affichageLatitude: UILabel!
     @IBOutlet weak var affichageDrapeau: UIImageView!
+    @IBOutlet weak var affichageMap: MKMapView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        let iX = (myPosition.Latitude as NSString).doubleValue
+        let iY = (myPosition.Longitude as NSString).doubleValue
+        let initialLocation = CLLocation(latitude: iX, longitude: iY)
        
-        print("JE SUIS LOADÉ")
-       // let test = vc?.donneesPays?.Response[myPosition]
-        //print("TESTTTTTT---------\(noms)")
         
-       //affichagePays.text = Pays.Response[myPosition].Name
+        print("JE SUIS LOADÉ", myPosition)
+        affichagePays.text = myPosition.Name
+        affichageCode.text = "AlphaCode: \(myPosition.Alpha2Code)"
+        affichageRegion.text = "Région: \(myPosition.Region)"
+        affichageMonnaie.text = "Monnaie: \(myPosition.CurrencyName)"
+        affichageLatitude.text = "Latitude: \(myPosition.Latitude)"
+        affichageLongitude.text = "Longitude: \(myPosition.Longitude)"
+        centerMapOnLocation(location: initialLocation)
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        let imageUrlString =  myPosition.FlagPng
+        let imageUrl:URL = URL(string: imageUrlString)!
+        
+        // Start background thread so that image loading does not make app unresponsive
+        DispatchQueue.global(qos: .userInitiated).async {
+            
+            let imageData:NSData = NSData(contentsOf: imageUrl)!
+            
+            
+            // When from background thread, UI needs to be updated on main_queue
+            DispatchQueue.main.async {
+                let image = UIImage(data: imageData as Data)
+                self.affichageDrapeau.image = image
+                
+               
+            }
+        }
     }
     
     override func didReceiveMemoryWarning() {

@@ -72,6 +72,8 @@ import RealmSwift
             }
         }*/
         print("i'm master")
+        print(Realm.Configuration.defaultConfiguration.fileURL!)
+        print("i'm master")
         layoutFAB()
         donneesDePays()
     }
@@ -93,12 +95,14 @@ import RealmSwift
         }
         
         fab.addItem(title: "Menu"){item in self.dismiss(animated: true, completion: nil)}
+        fab.addItem(title: "Credits"){item in self.performSegue(withIdentifier: "versCredit", sender: nil)}
+        fab.addItem(title: "À propos"){item in self.performSegue(withIdentifier: "versAPropos", sender: nil)}
         
-        fab.addItem("Become an Admin", icon: UIImage(named: "Contacts Filled.png")) { item in
+        /*fab.addItem("Become an Admin", icon: UIImage(named: "Contacts Filled.png")) { item in
             let alert = UIAlertController(title: "Become an Admin", message: "Send a request to be an admin and be able to write notices", preferredStyle: .alert)
             alert.addAction(UIAlertAction(title: "Send Request", style: .default, handler: nil))
             self.present(alert, animated: true, completion: nil)
-        }
+        }*/
         fab.fabDelegate = self
         
         self.view.addSubview(fab)
@@ -126,10 +130,6 @@ import RealmSwift
             //let _longitudes = content.Longitude
             //let _monnaies = content.CurrencyName
             //let _drapeaux = content.FlagPng
-            
-            
-            
-           
        // }
        
         
@@ -137,13 +137,13 @@ import RealmSwift
     
     // MARK: - Navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        selectionDeBase = CVpays.indexPath(for: sender as! UITableViewCell)!.row
         
-        let destination = segue.destination as! VCPays
-        destination.myPosition = donneesPays?.Response[selectionDeBase]
-        
-        
-        
+        if sender is UITableViewCell {
+            selectionDeBase = CVpays.indexPath(for: sender as! UITableViewCell)!.row
+            
+            let destination = segue.destination as! VCPays
+            destination.myPosition = donneesPays?.Response[selectionDeBase]
+        }
         
     } //  prepare(for segue
     //MARK:- Segue
@@ -153,21 +153,10 @@ import RealmSwift
         performSegue(withIdentifier: "versRecherche", sender: nil)
         
     }
-    
-  
-}
-
- /*override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-    
-    let selection = monCV.indexPath(for: sender as! UICollectionViewCell)!.row
-    
-    print("# Exécution de la méthode: prepareForSegue pour la cellule numéro: \(selection)\n")
-    
-    let destination = segue.destination as! Details
-    
-    destination.infoCourante = pub[selection]
-    
-    print("# Exécution de : prepare:for segue\n")
- } */
  
+ //MARK:- Realm
 
+ 
+ 
+ 
+}
