@@ -53,7 +53,6 @@
 		ECDF6E971FCC543F006585F4 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = ECDF6E961FCC543F006585F4 /* Podfile */; };
 		ECF6A8031FC30E3100E276FD /* palette2.tiff in Resources */ = {isa = PBXBuildFile; fileRef = ECF6A8011FC30E2600E276FD /* palette2.tiff */; };
 		ECF6A8041FC30E3400E276FD /* palette.tiff in Resources */ = {isa = PBXBuildFile; fileRef = ECF6A8021FC30E2D00E276FD /* palette.tiff */; };
-		ECF6A80B1FC3154400E276FD /* video.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = ECF6A80A1FC3154400E276FD /* video.mp4 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -110,7 +109,6 @@
 		ECF6A8011FC30E2600E276FD /* palette2.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = palette2.tiff; sourceTree = "<group>"; };
 		ECF6A8021FC30E2D00E276FD /* palette.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = palette.tiff; sourceTree = "<group>"; };
 		ECF6A8061FC310D900E276FD /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
-		ECF6A80A1FC3154400E276FD /* video.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = video.mp4; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -194,7 +192,6 @@
 			isa = PBXGroup;
 			children = (
 				EC4F22A91FE337810069B540 /* animationprod.mp4 */,
-				ECF6A80A1FC3154400E276FD /* video.mp4 */,
 				EC3E1E8D1FB9DC0A002E4900 /* projet_synthese */,
 				EC3E1E8C1FB9DC0A002E4900 /* Products */,
 				ECF6A8051FC310D900E276FD /* Frameworks */,
@@ -327,7 +324,6 @@
 				ECBCBA131FC32B3300EFD821 /* Discovery Hit.mp3 in Resources */,
 				ECB275FE1FC71D89003D70A1 /* icon76.jpg in Resources */,
 				ECF6A8041FC30E3400E276FD /* palette.tiff in Resources */,
-				ECF6A80B1FC3154400E276FD /* video.mp4 in Resources */,
 				ECDF6E971FCC543F006585F4 /* Podfile in Resources */,
 				ECB276021FC71D89003D70A1 /* icon120-1.png in Resources */,
 				ECB276051FC71D89003D70A1 /* icon167.png in Resources */,

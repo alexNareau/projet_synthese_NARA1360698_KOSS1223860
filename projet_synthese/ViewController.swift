@@ -127,8 +127,6 @@ import RealmSwift
         performSegue(withIdentifier: "versRecherche", sender: nil)
         
     }
- 
 
- 
  
 }

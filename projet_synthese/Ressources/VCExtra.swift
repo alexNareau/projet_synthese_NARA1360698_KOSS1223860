@@ -16,7 +16,7 @@ class VCExtra: UIViewController {
     }
     
     @IBAction func debutVid(_ sender: UIButton) {
-        print("start video")
+    print("start video")
         if let path = Bundle.main.path(forResource: "animationprod", ofType: "mp4")  //accès au url de la vidéo
         {
             let video = AVPlayer(url: URL(fileURLWithPath: path)) //accès à la vidéo elle-même
