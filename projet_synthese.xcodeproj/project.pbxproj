@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		0E60621A1FE35663009D70F1 /* animationprod.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = EC4F22A91FE337810069B540 /* animationprod.mp4 */; };
+		0E6062201FE36FA8009D70F1 /* documentPromo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0E60621E1FE36FA4009D70F1 /* documentPromo.jpg */; };
 		0EDA9E9B1FBE150800F42D7A /* intro.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0EDA9E9A1FBE150800F42D7A /* intro.jpg */; };
 		AEB87F299180240C40ADA467 /* Pods_projet_synthese.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 264511DC37E08D2EB0CB9A37 /* Pods_projet_synthese.framework */; };
 		EC3E1E8F1FB9DC0A002E4900 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC3E1E8E1FB9DC0A002E4900 /* AppDelegate.swift */; };
@@ -56,6 +57,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0E60621E1FE36FA4009D70F1 /* documentPromo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = documentPromo.jpg; sourceTree = "<group>"; };
 		0EDA9E9A1FBE150800F42D7A /* intro.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = intro.jpg; sourceTree = "<group>"; };
 		264511DC37E08D2EB0CB9A37 /* Pods_projet_synthese.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_projet_synthese.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3EF95D6765A08E381D79A50D /* Pods-projet_synthese.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-projet_synthese.debug.xcconfig"; path = "Pods/Target Support Files/Pods-projet_synthese/Pods-projet_synthese.debug.xcconfig"; sourceTree = "<group>"; };
@@ -190,6 +192,7 @@
 			isa = PBXGroup;
 			children = (
 				EC4F22A91FE337810069B540 /* animationprod.mp4 */,
+				0E60621E1FE36FA4009D70F1 /* documentPromo.jpg */,
 				EC3E1E8D1FB9DC0A002E4900 /* projet_synthese */,
 				EC3E1E8C1FB9DC0A002E4900 /* Products */,
 				ECF6A8051FC310D900E276FD /* Frameworks */,
@@ -318,6 +321,7 @@
 				ECB275E01FC716C4003D70A1 /* 15481-NQDIVL.jpg in Resources */,
 				EC4F22A11FE333B50069B540 /* animationCap.jpg in Resources */,
 				ECB276001FC71D89003D70A1 /* icon80.png in Resources */,
+				0E6062201FE36FA8009D70F1 /* documentPromo.jpg in Resources */,
 				0E60621A1FE35663009D70F1 /* animationprod.mp4 in Resources */,
 				EC4F22A21FE333B50069B540 /* favoris.png in Resources */,
 				ECBCBA131FC32B3300EFD821 /* Discovery Hit.mp3 in Resources */,
