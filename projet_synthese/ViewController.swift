@@ -22,19 +22,19 @@ import RealmSwift
     /**
      
      - Auteur:
-     Alexandre Nareau
+        Alexandre Nareau
      
      - Retourne:
-     - Un array des données de l'API.
+        - Une cellule réutilisable du tableView.
      
      - Envoi:
-     - Les données des pays voulu.
+        - les données des pays dans les cellules.
      
      - Paramètre:
-     - for content in
+        - tableView: Demande au data source une cellule pour y insérer les données.
      
      - Description détaillée:
-     - Fonction qui permet de faire afficher les données des Pays dans l'application.
+        - Fonction qui permet de faire afficher un tableView avec les données à l'intérieur.
      */
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -144,10 +144,10 @@ import RealmSwift
         Alexandre Nareau
      
      - Retourne:
-        - Un array des données de l'API.
+        - Un storyboardSegue, qui permet de faire la transition visuelle entre deux view controllers.
      
      - Envoi:
-        - Les données des pays voulu.
+        - Cellule de tableView pour créer des rangées.
      
      - Paramètre:
         - prepare(for segue): Notifie le viewController qu'un segue va débuter.
@@ -171,19 +171,19 @@ import RealmSwift
     /**
      
      - Auteur:
-     Alexandre Nareau
+        Alexandre Nareau
      
      - Retourne:
-        - 
+        - Une segue qui permet d'aller à la page recherche.
      
      - Envoi:
-        -
+        - identifiant "versRecherche"
      
      - Paramètre:
-     - performSegue: initie le segue
+        - performSegue: initie le segue
      
      - Description détaillée:
-     - Fonction qui permet de changer de page pour aller à la page d'accueil.
+        - Fonction qui permet de changer de page pour aller à la page d'accueil.
      */
    
    func VersPageRecherche(){

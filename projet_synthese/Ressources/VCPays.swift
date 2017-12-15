@@ -9,29 +9,31 @@
 import UIKit
 import MapKit
 
-/**
- 
- - Auteur:
-    Alexandre Nareau
- 
- - Retourne:
- - Un array des données de l'API.
- 
- - Envoi:
- - Les données des pays voulu.
- 
- - Paramètre:
- - for content in
- 
- - Description détaillée:
- - Fonction qui permet de faire afficher les données des Pays dans l'application.
- */
+
 
 class VCPays: UIViewController {
 
     var vc: ViewController?
     var myPosition:Reponse!
     let regionRadius: CLLocationDistance = 3000000
+    
+    /**
+     
+     - Auteur:
+     Alexandre Nareau
+     
+     - Retourne:
+        - Le pays sélectionné sur la map.
+     
+     - Envoi:
+        - Les coordonnées spécifiées.
+     
+     - Paramètre:
+        - MKCoordinateRefionMakeWithDistance: Créé une nouvelle MKCoordinateRegion avec les coordonnées spécifiées.
+     
+     - Description détaillée:
+        - Fonction qui permet de faire afficher le Pays sélectionné dans la map.
+     */
     func centerMapOnLocation(location: CLLocation) {
         let coordinateRegion = MKCoordinateRegionMakeWithDistance(location.coordinate,
                                                                   regionRadius, regionRadius)
@@ -60,16 +62,17 @@ class VCPays: UIViewController {
      Alexandre Nareau
      
      - Retourne:
-        - Un array des données de l'API.
+        - La latitude et la longitude du pays sélectionné.
      
      - Envoi:
-        - Les données des pays voulu.
+        - Les données du pays sélectionné.
      
      - Paramètre:
-        - for content in
+        - doubleValue: la valeur du String doublé.
+        - CLLocation: la longitude et latitude rapporté par le système.
      
      - Description détaillée:
-        - Fonction qui permet de faire afficher les données des Pays dans l'application.
+        - Fonction qui est appelée lorsque le controller est loadé.
      */
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -93,16 +96,16 @@ class VCPays: UIViewController {
      Alexandre Nareau
      
      - Retourne:
-     - Un array des données de l'API.
+        -Le drapeau du Pays sélectionné.
      
      - Envoi:
-     - Les données des pays voulu.
+        - Les informations dy pays sélectionné.
      
      - Paramètre:
-     - for content in
+        - URL: identifie l'endroit de la ressource.
      
      - Description détaillée:
-     - Fonction qui permet de faire afficher les données des Pays dans l'application.
+     - Fonction qui permet de notifier au controller que cette "view" va être ajoutée à la hiérarchie. Permet aussi d'Afficher le drapeau du pays sélectionné.
      */
     
     override func viewWillAppear(_ animated: Bool) {
@@ -121,15 +124,8 @@ class VCPays: UIViewController {
             DispatchQueue.main.async {
                 let image = UIImage(data: imageData as Data)
                 self.affichageDrapeau.image = image
-                
-               
+   
             }
         }
     }
-
-    /*
-    // MARK: - Navigation
-
-    */
-
 }

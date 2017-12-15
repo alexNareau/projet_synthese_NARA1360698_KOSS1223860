@@ -18,18 +18,18 @@ class VCIntro: UIViewController {
      Susyane Koschinsky
      
      - Retourne:
-     -Le nom du chemin complet pour la ressource identifié par le nom et l'extension du fichier.
+        -Le nom du chemin complet pour la ressource identifié par le nom et l'extension du fichier.
      
      - Envoi:
-     -Discovery Hit.mp3
+        -Discovery Hit.mp3
      
      - Paramètre:
-     - forResources: le nom de la ressource. Ne peut pas être vide.
-     - ofType: Le nom de l'extention. Ne peut pas être vide.
-     - fileUrlWithPath:Initialise un nouveau fichier créé. Peux être vide.
+        - forResources: le nom de la ressource. Ne peut pas être vide.
+        - ofType: Le nom de l'extention. Ne peut pas être vide.
+        - fileUrlWithPath:Initialise un nouveau fichier créé. Peux être vide.
      
      - Description détaillée:
-     -Fonction qui permet de faire jouer une musique dès l'ouverture de l'application.
+        -Fonction qui permet de faire jouer une musique dès l'ouverture de l'application.
      */
     
     var audioPlayer: AVAudioPlayer?
@@ -60,10 +60,11 @@ class VCIntro: UIViewController {
         Alexandre Nareau
      
      - Retourne:
-        - 
+        - Un segue qui permet d'aller à la page Accueil.
      
      - Envoi:
-        -
+        - identifiant "versAccueil"
+     
      
      - Paramètre:
         - performSegue: initie le segue
