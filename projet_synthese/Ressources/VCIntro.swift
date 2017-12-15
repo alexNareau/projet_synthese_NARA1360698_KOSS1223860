@@ -12,6 +12,26 @@ import AVFoundation
 
 class VCIntro: UIViewController {
     
+    /**
+     
+     - Auteur:
+     Susyane Koschinsky
+     
+     - Retourne:
+     -Le nom du chemin complet pour la ressource identifié par le nom et l'extension du fichier.
+     
+     - Envoi:
+     -Discovery Hit.mp3
+     
+     - Paramètre:
+     - forResources: le nom de la ressource. Ne peut pas être vide.
+     - ofType: Le nom de l'extention. Ne peut pas être vide.
+     - fileUrlWithPath:Initialise un nouveau fichier créé. Peux être vide.
+     
+     - Description détaillée:
+     -Fonction qui permet de faire jouer une musique dès l'ouverture de l'application.
+     */
+    
     var audioPlayer: AVAudioPlayer?
 
     override func viewDidLoad() {
@@ -34,10 +54,23 @@ class VCIntro: UIViewController {
         }
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
+    /**
+     
+     - Auteur:
+        Alexandre Nareau
+     
+     - Retourne:
+        - 
+     
+     - Envoi:
+        -
+     
+     - Paramètre:
+        - performSegue: initie le segue
+     
+     - Description détaillée:
+     - Fonction qui permet de changer de page pour aller à la page d'accueil.
+     */
     
     func VersPageAccueil(){
         performSegue(withIdentifier: "versAccueil", sender: nil)

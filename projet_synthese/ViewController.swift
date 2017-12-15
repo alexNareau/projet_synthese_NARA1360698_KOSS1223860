@@ -19,6 +19,24 @@ import RealmSwift
        
     }
     
+    /**
+     
+     - Auteur:
+     Alexandre Nareau
+     
+     - Retourne:
+     - Un array des données de l'API.
+     
+     - Envoi:
+     - Les données des pays voulu.
+     
+     - Paramètre:
+     - for content in
+     
+     - Description détaillée:
+     - Fonction qui permet de faire afficher les données des Pays dans l'application.
+     */
+    
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let newCellule = tableView.dequeueReusableCell(withIdentifier: "laCellule", for: indexPath)
         var _nomPays = "Non définis"
@@ -45,9 +63,6 @@ import RealmSwift
         VersPageRecherche()
     }
     
-    //var backgroundPlayer = AVAudioPlayer()
-    
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -56,10 +71,23 @@ import RealmSwift
         donneesDePays()
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-
-    }
+    /**
+     
+     - Auteur:
+        Alexandre Nareau
+     
+     - Retourne:
+        - Un menu pour naviguer dans l'application.
+     
+     - Envoi:
+        - Les données du boutons.
+     
+     - Paramètre:
+        - for content in
+     
+     - Description détaillée:
+        - Fonction qui permet de faire afficher le bouton Floaty.
+     */
     
     func layoutFAB() {
         let fab = Floaty()
@@ -83,6 +111,25 @@ import RealmSwift
         
     }
  
+    
+    /**
+     
+     - Auteur:
+     Alexandre Nareau
+     
+     - Retourne:
+        -Les données de l'API country
+     
+     - Envoi:
+     http://countryapi.gear.host/v1/Country/getCountries
+     
+     - Paramètre:
+        - contentsOf:
+     
+     - Description détaillée:
+        -Fonction qui permet de prendre les données de l'API country et de les décoder en JSON.
+     */
+    
     //MARK:- Obtension de données
     func donneesDePays(){
        let urlCountryApi = "http://countryapi.gear.host/v1/Country/getCountries"
@@ -91,24 +138,24 @@ import RealmSwift
        //self.afficherDonneesDePays()
        
     }
-    
-   
-    
-    
-    /*func afficherDonneesDePays(){
-        for content in (donneesPays?.Response)! {
-            let _noms = donneesPays?.Response[selectionDeBase].Name
-            let _alpha2Codes = content.Alpha2Code
-            let _regions = content.Region
-            let _latitudes = content.Latitude
-            let _longitudes = content.Longitude
-            let _monnaies = content.CurrencyName
-            let _drapeaux = content.FlagPng
-        }
-       
-        
-    }*/
-    
+    /**
+     
+     - Auteur:
+        Alexandre Nareau
+     
+     - Retourne:
+        - Un array des données de l'API.
+     
+     - Envoi:
+        - Les données des pays voulu.
+     
+     - Paramètre:
+        - prepare(for segue): Notifie le viewController qu'un segue va débuter.
+     
+     - Description détaillée:
+        - Fonction qui permet de préparer le segue.
+     */
+
     // MARK: - Navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         
@@ -121,7 +168,23 @@ import RealmSwift
         
     } 
     //MARK:- Segue
-    
+    /**
+     
+     - Auteur:
+     Alexandre Nareau
+     
+     - Retourne:
+        - 
+     
+     - Envoi:
+        -
+     
+     - Paramètre:
+     - performSegue: initie le segue
+     
+     - Description détaillée:
+     - Fonction qui permet de changer de page pour aller à la page d'accueil.
+     */
    
    func VersPageRecherche(){
         performSegue(withIdentifier: "versRecherche", sender: nil)

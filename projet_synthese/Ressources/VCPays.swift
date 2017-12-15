@@ -9,6 +9,24 @@
 import UIKit
 import MapKit
 
+/**
+ 
+ - Auteur:
+    Alexandre Nareau
+ 
+ - Retourne:
+ - Un array des données de l'API.
+ 
+ - Envoi:
+ - Les données des pays voulu.
+ 
+ - Paramètre:
+ - for content in
+ 
+ - Description détaillée:
+ - Fonction qui permet de faire afficher les données des Pays dans l'application.
+ */
+
 class VCPays: UIViewController {
 
     var vc: ViewController?
@@ -19,10 +37,9 @@ class VCPays: UIViewController {
                                                                   regionRadius, regionRadius)
         affichageMap.setRegion(coordinateRegion, animated: true)
     }
-    
+ 
     @IBAction func ajoutFavoris(_ sender: Any) {
     }
-    
     
     @IBAction func retourARecherche(_ sender: Any) {
         dismiss(animated: true, completion: nil)
@@ -37,6 +54,23 @@ class VCPays: UIViewController {
     @IBOutlet weak var affichageDrapeau: UIImageView!
     @IBOutlet weak var affichageMap: MKMapView!
     
+    /**
+     
+    - Auteur:
+     Alexandre Nareau
+     
+     - Retourne:
+        - Un array des données de l'API.
+     
+     - Envoi:
+        - Les données des pays voulu.
+     
+     - Paramètre:
+        - for content in
+     
+     - Description détaillée:
+        - Fonction qui permet de faire afficher les données des Pays dans l'application.
+     */
     override func viewDidLoad() {
         super.viewDidLoad()
         let iX = (myPosition.Latitude as NSString).doubleValue
@@ -44,7 +78,7 @@ class VCPays: UIViewController {
         let initialLocation = CLLocation(latitude: iX, longitude: iY)
        
         
-        print("JE SUIS LOADÉ", myPosition)
+        print("loader", myPosition)
         affichagePays.text = myPosition.Name
         affichageCode.text = "AlphaCode: \(myPosition.Alpha2Code)"
         affichageRegion.text = "Région: \(myPosition.Region)"
@@ -53,6 +87,23 @@ class VCPays: UIViewController {
         affichageLongitude.text = "Longitude: \(myPosition.Longitude)"
         centerMapOnLocation(location: initialLocation)
     }
+    /**
+     
+     - Auteur:
+     Alexandre Nareau
+     
+     - Retourne:
+     - Un array des données de l'API.
+     
+     - Envoi:
+     - Les données des pays voulu.
+     
+     - Paramètre:
+     - for content in
+     
+     - Description détaillée:
+     - Fonction qui permet de faire afficher les données des Pays dans l'application.
+     */
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
@@ -75,21 +126,10 @@ class VCPays: UIViewController {
             }
         }
     }
-    
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-    
 
     /*
     // MARK: - Navigation
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
     */
 
 }

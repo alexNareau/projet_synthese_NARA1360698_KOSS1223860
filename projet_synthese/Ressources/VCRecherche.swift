@@ -10,16 +10,7 @@ import UIKit
 
 class VCRecherche: UIViewController/*, UITableViewDataSource */{
     
-    /*func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return accesDonnees?.
-    }
-    
-   /* func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let newCellule = UITableViewCell()
-        newCellule.textLabel!.text = "This is a test\(indexPath.row)"
-        return newCellule
-    }*/*/
-    
+
 
     override func viewDidLoad() {
         super.viewDidLoad()

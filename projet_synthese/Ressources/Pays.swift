@@ -7,11 +7,46 @@
 //
 
 import Foundation
+
+/**
+ 
+ - Auteur:
+    Alexandre Nareau
+ 
+ - Retourne:
+    -Un Array avec les données des pays
+ 
+ - Envoi:
+    - Les données des pays voulu.
+ 
+ - Paramètre:
+    - Codable: Un type qui peut se convertir.
+ 
+ - Description détaillée:
+    - Fonction qui permet de recevoir un Array des données.
+ */
+
 struct Pays: Codable {
     var Response: Array<Reponse>
-    
-    
 }
+
+/**
+ 
+ - Auteur:
+    Alexandre Nareau
+ 
+ - Retourne:
+    - Un String pour chaque variable.
+ 
+ - Envoi:
+    - Les données voulus.
+ 
+ - Paramètre:
+    - Codable: Un type qui peut se convertir.
+ 
+ - Description détaillée:
+    - Fonction qui permet de recevoir des Strings des variables.
+ */
 
 struct Reponse: Codable {
     var Name: String
